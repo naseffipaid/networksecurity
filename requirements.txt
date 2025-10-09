@@ -7,6 +7,7 @@ certifi
 pymongo[srv]==3.6
 mlflow
 dill
+dagshub
 pyaml
 
 
