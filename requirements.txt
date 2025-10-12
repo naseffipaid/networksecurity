@@ -8,6 +8,7 @@ pymongo[srv]==3.6
 dill
 fastapi
 uvicorn
+PyYAML
 
 
 ##-e .
