@@ -279,7 +279,7 @@ jobs:
           IMAGE_TAG: latest
         run: |
           set -ex
-          # Force no-cache to ensure updated modules are installed
+          # Force rebuild to install new modules
           docker build --no-cache -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
@@ -319,11 +319,12 @@ jobs:
       - name: Stop and remove existing container (if any)
         run: |
           set -ex
-          if docker ps -a --filter "name=networksecurity" | grep -q .; then
-            docker stop networksecurity
-            docker rm -fv networksecurity
+          CONTAINER=$(docker ps -a --filter "name=networksecurity" -q)
+          if [ -n "$CONTAINER" ]; then
+            docker stop $CONTAINER || true
+            docker rm -fv $CONTAINER || true
           else
-            echo "No running container to remove"
+            echo "No container found, skipping stop/removal"
           fi
 
       - name: Run Docker container
@@ -346,4 +347,3 @@ jobs:
         run: |
           set -ex
           docker system prune -af
-
