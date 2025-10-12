@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/USER/Documents/ML%20and%20NLP/networkSecurity/mlruns/0/models/m-6e06ee853e6045a6bfd3f3c4738f44cf/artifacts
+creation_timestamp: 1760028558482
+experiment_id: '0'
+last_updated_timestamp: 1760028596449
+model_id: m-6e06ee853e6045a6bfd3f3c4738f44cf
+model_type: null
+name: model
+source_run_id: 88bcfb1086244b0899de7617d9c60b7c
+status: 2
+status_message: null

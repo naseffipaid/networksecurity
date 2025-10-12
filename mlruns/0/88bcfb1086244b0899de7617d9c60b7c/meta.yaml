@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USER/Documents/ML%20and%20NLP/networkSecurity/mlruns/0/88bcfb1086244b0899de7617d9c60b7c/artifacts
+end_time: 1760028596517
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 88bcfb1086244b0899de7617d9c60b7c
+run_name: big-hare-153
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760028557553
+status: 3
+tags: []
+user_id: USER

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USER/Documents/ML%20and%20NLP/networkSecurity/mlruns/0/bb8c024db80441f2bc82a07cee95a2b9/artifacts
+end_time: 1760028556747
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb8c024db80441f2bc82a07cee95a2b9
+run_name: calm-squid-217
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760028485757
+status: 3
+tags: []
+user_id: USER
